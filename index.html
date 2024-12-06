@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrLakomka.bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: url('https://media.discordapp.net/attachments/814523666602655825/1314129276269756467/ziR4iAW.gif?ex=6753f742&is=6752a5c2&hm=b181d8e0e9bb7375d8e7eb8bb6e0cc6624886612a5c54d42beb7f5e15c55ead9&=') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .profile-video {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 24px;
+            margin: 15px 0;
+            color: #ffffff;
+        }
+
+        .description {
+            color: #808080;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            color: #ffffff;
+            font-size: 28px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .social-icon:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+            color: #ff00ff;
+            text-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            .social-icon {
+                font-size: 25px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video class="profile-video" autoplay loop muted playsinline>
+            <source src="https://images-ext-1.discordapp.net/external/YZjoEXcQ73HwgWrPQLsVUJ0c6ZdHfs79Fdr97vhjYYY/https/media.tenor.com/IlFcynh4EgYAAAPo/cat-discord.mp4" type="video/mp4">
+        </video>
+        <h1 class="name">MrLakomka.bio</h1>
+        <p class="description">Tg bots, web site, furry lover</p>
+
+        <div class="socials">
+            <a href="https://t.me/notLakomka" class="social-icon"><i class="fab fa-telegram"></i></a>
+            <a href="https://github.com/MrLakomka" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com/users/921485029954166805" class="social-icon"><i class="fab fa-discord"></i></a>
+            <a href="https://steamcommunity.com/profiles/76561199235620505/" class="social-icon"><i class="fab fa-steam"></i></a>
+        </div>
+    </div>
+</body>
+</html>
